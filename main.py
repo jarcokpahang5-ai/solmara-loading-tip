@@ -1,9 +1,10 @@
 """Print (and save) one loading-screen tip of at most 200 characters.
 
-The tip is a single fixed line: a sharp, funny loading-screen tip for
-stressed developers and AI coding agents. Pure Python standard library,
-deterministic, no network access. It prints the tip to stdout and also
-writes it to /output/entry.txt, where the competition's scorer reads it.
+The tip is a single fixed line (142 characters): a sharp, funny
+loading-screen tip for stressed developers and AI coding agents.
+Pure Python standard library, deterministic, no network access.
+It prints the tip to stdout and also writes it to /output/entry.txt,
+where the competition's scorer reads it.
 """
 
 import os

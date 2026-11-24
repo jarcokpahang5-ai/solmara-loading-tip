@@ -9,8 +9,9 @@ writes it to /output/entry.txt, where the competition's scorer reads it.
 import os
 
 TIP = (
-    "Tip: while this loads, your agent is re-reading its own diff "
-    "and quietly deleting the comment that said 'temporary fix'."
+    "Tip: while this loads, your code is not broken — it is just "
+    "pretending to think very hard about the bug you swore was fixed "
+    "three deploys ago."
 )
 
 
@@ -19,7 +20,7 @@ def main():
     try:
         os.makedirs("/output", exist_ok=True)
         with open("/output/entry.txt", "w", encoding="utf-8") as f:
-            f.write(TIP)
+            f.write(TIP + "\n")
     except OSError:
         pass
 
